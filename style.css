@@ -1,0 +1,300 @@
+/*
+	In the name of Allah
+
+	blogfa_adabi template
+	© 2016 Hadi Safari (hadisafari76[at]gmail.com)
+*/
+@font-face{
+	font-family: yekan;
+	src:
+		url("http://cdn.bayan.ir/blog/templates/shared/fonts/BYekan.eot?view?#iefix") format("embedded-opentype"),
+		url("http://cdn.bayan.ir/blog/templates/shared/fonts/BYekan.woff?view") format("woff"),
+		url("http://cdn.bayan.ir/blog/templates/shared/fonts/BYekan.ttf?view") format("truetype");
+}
+@font-face{
+	font-family: iraniansans;
+	src:
+		url("http://awebfont.ir/services/fonts/773bba0f218e4740e1ce2e37ebc80ef3c29917152901931.eot?#iefix") format("embedded-opentype"),
+		url("http://awebfont.ir/services/fonts/773bba0f218e4740e1ce2e37ebc80ef3c29917152901931.woff") format("woff"),
+		url("https://fontlibrary.org/assets/fonts/iranian-sans/2619cbcea5e87e4bb3d77b2e2a94466f/730e5ef8ba88ae5a68b261e84125043c/IranianSansBold.ttf") format("truetype");
+}
+*{
+	box-sizing: border-box;
+}
+body, html{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+p{
+	text-align: justify;
+}
+body{
+	direction: rtl;
+	background: url(img/stackofbooks_back.png) center bottom / 100% auto no-repeat, #3b1a02;
+	color: #f9e8ce;
+	position: relative;
+	padding-bottom: 30px;
+	font-family: yekan, tahoma, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, #nav{
+	font-family: iraniansans, times, serif;
+}
+.postcnt{
+	text-align: justify;
+}
+#navholder{
+	background: #8d3e05;
+}
+.fluid{
+	width: 100%;
+}
+.container{
+	margin: auto;
+	width: 100%;
+}
+@media screen and (min-width: 768px){
+	.container{
+		width: 768px;
+	}
+}
+@media screen and (min-width: 992px){
+	.container{
+		width: 992px;
+	}
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: block;
+	width: 100%;
+}
+#nav ul{
+	list-style: none;
+	margin: 0 16px;
+	padding: 0;
+}
+#nav li{
+	display: inline-block;
+}
+#nav li a{
+	display: inline-block;
+	padding: 10px 32px;
+	margin: 0 -16px;
+	height: 40px;
+	min-width: 120px;
+	text-align: center;
+}
+#nav li a:hover{
+	background: linear-gradient(90deg, transparent, #3b1a02 20%, #3b1a02 80%, transparent);
+}
+#mainholder{
+	min-height: calc(100vh - 40px - 30px);
+}
+#top{
+	height: 300px;
+	margin-bottom: 16px;
+	position: relative;
+	background: rgba(0,0,0, 0.1) center / cover no-repeat;
+	background-image: url(img/stackofbooks.jpg);
+}
+#headershade{
+	height: 300px;
+	background: linear-gradient(90deg, #3b1a02 ,transparent 100px), linear-gradient(-90deg, #3b1a02 ,transparent 100px);
+}
+#titleholder{
+	background: linear-gradient(90deg, transparent, rgba(249, 232, 206, 0.7) 25%, rgba(249, 232, 206, 0.7) 75%, transparent);
+	display: inline-block;
+	margin: 26px;
+	padding: 26px 50px;
+	color: #8d3e05;
+	text-align: center;
+	position: absolute;
+	bottom: 26px;
+	left: 26px;
+}
+#titleholder *{
+	padding: 0;
+	margin: 0;
+}
+#titleholder h2{
+	color: #3b1a02;
+}
+#footer{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: linear-gradient(to left, transparent, #3b1a02 25%, #3b1a02 75%, transparent);
+	opacity: 0.8;
+	font-size: 0.8em;
+	font-weight: lighter;
+}
+@media print{
+	#sidebar{
+		display: none;
+	}
+}
+@media screen and (min-width: 992px){
+	#cnt{
+		width: calc(100% - 250px);
+		float: left;
+	}
+	#sidebar{
+		width: 250px;
+		float: right;
+	}
+}
+.sideholder, .holder{
+	padding: 10px;
+	position: relative;
+	/*opacity: 0.8;*/
+}
+.sideholder:hover, .holder:hover{
+	/*opacity: 1;*/
+}
+.sidecnt, .post{
+	padding: 16px;
+	background: linear-gradient(90deg, transparent, #f9e8ce 5%, #f9e8ce 95%, transparent);
+	background: #f9e8ce;
+	box-shadow: 0 0 16px 2px inset;
+	color: #3b1a02;
+}
+.sidecnt img{
+	text-align: center;
+	margin: 6px auto;
+	width: 90%;
+	box-shadow: 0 0 6px 1px;
+	border-radius: 6px;
+	display: block;
+}
+.sidecnt .det{
+	text-align: left;
+	display: block;
+	padding: 3px 0;
+	font-weight: lighter;
+	font-size: 0.9em;
+}
+.sideholder a:hover{
+	color: #8d3e05;
+}
+.sidehead a:hover{
+	color: #3b1a02;
+}
+.sideholder p, .sideholder h3, .sideholder h1, .sideholder ul, .archive ul{
+	margin: 0;
+	padding: 0;
+}
+.sideholder ul, .archive ul{
+	list-style: none;
+}
+.sideholder li a::before, .posttags li a::before, .postcats li a::before, .archive li a::before{
+	content: "\f0c1";
+	padding-left: 6px;
+	display: inline-block;
+	/*font: normal normal normal 14px/1 FontAwesome;*/
+	font-family: FontAwesome;
+}
+.sideholder#sidearchive li a::before, .archive li a::before{
+	content: "\f073";
+}
+.sideholder#sideauthors li a::before{
+	content: "\f007";
+}
+.sideholder#sideauthors li:first-child a::before{
+	content: "\f0c0";
+}
+.sideholder#sidetags li a::before, .posttags li a::before{
+	content: "\f292";
+}
+.sideholder#sidecats li a::before, .postcats li a::before{
+	content: "\f07c";
+}
+.sideholder#sidefeed li a::before{
+	content: "\f09e";
+}
+.sidehead, #cntnav a{
+	padding: 3px;
+	background: linear-gradient(90deg, transparent, #8d3e05 20%, #8d3e05 80%, transparent);
+	margin-bottom: 6px;
+	text-align: center;
+}
+.sideholder#sidecustomhtml{
+	text-align: center;
+}
+.post a{
+	color: #8d3e05;
+}
+.post a:hover{
+	color: #05548d;
+}
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .postdet a{
+	color: #02233b;
+}
+.post h1{
+	font-size: 1.7em;
+}
+.post h1 a, .post h2 a, .post h3 a, .post h4 a, .post h5 a, .post h6 a{
+	color: inherit;
+}
+.posttags ul, .postcats ul, .postdet ul{
+	list-style: none;
+}
+.posttags ul, .posttags li, .postcats ul, .postcats li, .postdet ul, .postdet li{
+	display: inline;
+	padding: 3px;
+}
+.posttags, .postcats{
+	font-size: 0.8em;
+	font-weight: lighter;
+	padding: 1px 0;
+}
+.postdet{
+	text-align: left;
+	margin: 16px 0;
+	display: block;
+}
+.postdet .fa, .posttime .fa{
+	margin: 0 6px;
+	font-size: 1.2em;
+}
+.posttime{
+	font-size: 0.8em;
+	font-weight: lighter;
+	color: #05548d;
+	display: inline-block;
+	float: left;
+	/*background: rgba(255, 255, 255, 0.7);*/
+	margin: -16px 0 16px -16px;
+	padding: 3px 26px;
+	border-right: 3px solid;
+	border-bottom: 1px solid;
+	border-bottom-left-radius: 6px;
+}
+#cntnav{
+	height: 60px;
+}
+#cntnav a{
+	padding: 3px 26px;
+	display: inline-block;
+	width: 150px;
+	transition: width 0.5s;
+}
+#cntnav a:hover{
+	width: 200px;
+}
+#catnav_prev{
+	position: absolute;
+	left: 26px;
+}
+#catnav_next{
+	position: absolute;
+	right: 26px;
+}

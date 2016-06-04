@@ -1,0 +1,53 @@
+<!--
+	In the name of Allah
+
+	blogfa_adabi template: separate
+	© 2016 Hadi Safari (hadisafari76[at]gmail.com)
+-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="<-BlogAndPageTitle-> (<-BlogDescription->)">
+		<meta name="keywords" content="<-BlogAndPageTitle->, <-BlogId->">
+		<meta name="generator" content="blogfa.com">
+		<link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/style.css">
+		<title><-BlogAndPageTitle-></title>
+	</head>
+	<body>
+		<div id="navholder" class="fluid menucolor"><div id="nav" class="container"><ul>
+			<li><a href="<-BlogUrl->">صفحه اول</a></li>
+			<li><a href="<-BlogArchiveLink->">آرشیو مطالب</a></li>
+			<li><a href="/posts/">همهٔ مطالب</a></li>
+			<BlogProfileLinkBlock><li><a href="<-BlogProfileLink->" target="_blank">دربارهٔ <-BlogAuthor-></a></li></BlogProfileLinkBlock>
+		</ul></div></div>
+		<div class="fluid"><div id="mainholder" class="container"><div class="row"><div id="top"><div id="headershade"><div id="titleholder">
+			<h2><a href="<-BlogUrl->"><-BlogTitle-></a></h2>
+			<p><-BlogDescription-></p>
+		</div></div></div></div>
+		<div class="post">
+			<h1><a href="<-BlogPageLink->"><-BlogPageTitle-><span class="fa fa-i-cursor"></span></a></h1>
+			<div class="postcnt"><-BlogPageContent-></div>
+		</div>
+		</div></div>
+		<div class="fluid"><div id="footer" class="container">&copy; ۱۳۹۳ - <span class="thisyear">...</span> &nbsp; &nbsp; <-BlogAuthor-> &nbsp; &nbsp;  &nbsp; &nbsp; <small><span id="template_copyright">قالب: ادبی</span></small></div></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var headers = 4;
+				$(".thisyear").text(new Date().toLocaleDateString("fa", {year: "numeric"}));
+				$("#template_copyright").html("قالب: <a href=\"http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/\" target=\"_blank\">بلاگفاـادبی</a>");
+				var headerUrl = "stackofbooks";
+				if(window.location.pathname.indexOf("<-BlogArchiveLink->") > -1)
+					headerUrl = "archive";
+				else if(window.location.pathname.indexOf("page") > -1)
+					headerUrl = "stackofbooks";
+				else
+					headerUrl = "header" + Math.floor(Math.random() * headers);
+				$("#top").css("background-image", "url(http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/img/" + headerUrl + ".jpg)");
+			});
+		</script>
+	</body>
+</html>

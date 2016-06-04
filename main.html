@@ -1,0 +1,154 @@
+<!--
+	In the name of Allah
+
+	blogfa_adabi template: main
+	© 2016 Hadi Safari (hadisafari76[at]gmail.com)
+-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="<-BlogAndPostTitle-> (<-BlogDescription->)">
+		<meta name="keywords" content="<-BlogAndPostTitle->, <-BlogId->">
+		<meta name="generator" content="blogfa.com">
+		<link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/style.css">
+		<title><-BlogAndPostTitle-></title>
+	</head>
+	<body>
+		<div id="navholder" class="fluid menucolor"><div id="nav" class="container"><ul>
+			<li><a href="<-BlogUrl->">صفحه اول</a></li>
+			<li><a href="<-BlogArchiveLink->">آرشیو مطالب</a></li>
+			<li><a href="/posts/">همهٔ مطالب</a></li>
+			<BlogProfileLinkBlock><li><a href="<-BlogProfileLink->" target="_blank">دربارهٔ <-BlogAuthor-></a></li></BlogProfileLinkBlock>
+		</ul></div></div>
+		<div class="fluid"><div id="mainholder" class="container"><div class="row"><div id="top"><div id="headershade"><div id="titleholder">
+			<h2><a href="<-BlogUrl->"><-BlogTitle-></a></h2>
+			<p><-BlogDescription-></p>
+		</div></div></div></div><div class="row"><div id="cnt">
+			<BLOGFA><div class="holder"><div class="post">
+				<h1><a href="<-PostLink->"><-PostTitle-><span class="fa fa-i-cursor"></span></a></h1>
+				<div class="row"><div class="posttime"><span class="fa fa-calendar"></span><-PostDate-> &nbsp; <span class="fa fa-clock-o"></span><-PostTime-></div></div>
+				<div class="postcnt"><-PostContent-></div>
+				<div class="postdet"><ul>
+					<li><a href="<-PostAuthorLink->" target="_blank"><span class="fa fa-pencil"></span><-PostAuthor-></a></li>
+					<BlogExtendedPost><li><a href="<-PostLink->"><span class="fa fa-file-text"></span>ادامهٔ مطلب</a></li></BlogExtendedPost>
+					<BlogComment><li><a href="/comments/?blogid=<-BlogId->&amp;postid=<-PostId->" target="_blank"><span class="fa fa-comment"></span>نظرات</a><span id="cmtnum<-PostId->"></span></li></BlogComment>
+				</ul></div>
+				<BlogPostTagsBlock><div class="posttags">برچسب‌ها: <ul>
+					<BlogPostTags><li><a href="<-TagLink->" target="_blank"><-TagName-></a></li></BlogPostTags>
+				</ul></div></BlogPostTagsBlock>
+				<BlogPostCategoriesBlock><div class="postcats">موضوعات: <ul>
+					<BlogPostCategories><li><a href="<-CategoryLink->" target="_blank"><-CategoryName-></a></li></BlogPostCategories>
+				</ul></div></BlogPostCategoriesBlock>
+			</div></div></BLOGFA>
+			<BlogNextAndPreviousBlock><div id="cntnav" class="holder">
+				<BlogNextPageBlock><a id="catnav_next" href="<-BlogNextPageLink->">صفحهٔ بعد</a></BlogNextPageBlock>
+				<BlogPreviousPageBlock><a id="catnav_prev" href="<-BlogPreviousPageLink->">صفحهٔ قبل</a></BlogPreviousPageBlock>
+			</div></BlogNextAndPreviousBlock>
+		</div><div id="sidebar">
+			<BlogProfile><div class="sideholder"><div class="sidecnt">
+				<BlogPhoto><img src="<-BlogPhotoLink->" alt="<-BlogTitle->"></BlogPhoto>
+				<p><-BlogAbout-></p>
+				<BlogProfileLinkBlock><a href="<-BlogProfileLink->" target="_blank"></BlogProfileLinkBlock><span class="det"><-BlogAuthor-></span><BlogProfileLinkBlock></a></BlogProfileLinkBlock>
+			</div></div></BlogProfile>
+			<BlogAuthorsBlock><div id="sideauthors" class="sideholder">
+				<div class="sidehead"><h3>نویسندگان</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogAuthors><li><a href="<-AuthorLink->"><-AuthorName-></a></li></BlogAuthors>
+				</ul></div>
+			</div></BlogAuthorsBlock>
+			<BlogLinksBlock><div class="sideholder">
+				<div class="sidehead"><h3>پیوندها</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogLinks><li><a href="<-LinkUrl->"><-LinkTitle-></a></li></BlogLinks>
+				</ul></div>
+			</div></BlogLinksBlock>
+			<BlogPreviousItemsBlock><div class="sideholder">
+				<div class="sidehead"><h3>آخرین مطالب</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogPreviousItems items="5"><li><a href="<-PostLink->"><-PostTitle-></a></li></BlogPreviousItems>
+				</ul></div>
+			</div></BlogPreviousItemsBlock>
+			<div id="sidearchive" class="sideholder">
+				<div class="sidehead"><h3>آرشیو</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogArchive maxitems="6" archivetitle="قدیمی‌تر" ><li><a href="<-ArchiveLink->"><-ArchiveTitle-></a></li></BlogArchive>
+				</ul></div>
+			</div>
+			<BlogCategoriesBlock><div id="sidecats" class="sideholder">
+				<div class="sidehead"><h3>موضوعات</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogCategories><li><a href="<-CategoryLink->"><-CategoryName-></a></li></BlogCategories>
+				</ul></div>
+			</div></BlogCategoriesBlock>
+			<BlogTagsBlock><div id="sidetags" class="sideholder">
+				<div class="sidehead"><h3>برچسب‌ها</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogTags><li><a href="<-TagLink->"><-TagName-></a> (<-TagCount->)</li></BlogTags>
+				</ul></div>
+			</div></BlogTagsBlock>
+			<BlogLinkDumpBlock><div class="sideholder">
+				<div class="sidehead"><h3>پیوندهای روزانه</h3></div>
+				<div class="sidecnt"><ul>
+					<BlogLinkDump><li><a href="<-LinkUrl->" title="<-LinkDescription->" target="_blank" rel="nofollow"><-LinkTitle-></a></li></BlogLinkDump>
+					<li><a href="/links" title="<-LinkDescription->" target="_blank" >تمام پیوندها</a></li>
+				</ul></div>
+			</div></BlogLinkDumpBlock>
+			<div id="sidefeed" class="sideholder">
+				<div class="sidehead"><h3>خبرخوان</h3></div>
+				<div class="sidecnt"><ul>
+					<li><a href="<-BlogXmlLink->" target="_blank">RSS</a></li>
+				</ul></div>
+			</div>
+			<div id="sidecustomhtml" class="sideholder"><-BlogCustomHtml-></div>
+		</div></div></div></div>
+		<div class="fluid"><div id="footer" class="container">&copy; ۱۳۹۳ - <span class="thisyear">...</span> &nbsp; &nbsp; <-BlogAuthor-> &nbsp; &nbsp;  &nbsp; &nbsp; <small><span id="template_copyright">قالب: ادبی</span></small></div></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var headers = 4;
+				$(".thisyear").text(new Date().toLocaleDateString("fa", {year: "numeric"}));
+				$("#template_copyright").html("قالب: <a href=\"http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/\" target=\"_blank\">بلاگفاـادبی</a>");
+				try {
+					for (i=0;i<BlogComments.length;i+=2){
+						try{
+							$("#cmtnum" + BlogComments[i]).text(" (" + BlogComments[i+1] + ")");
+							persiannum("#cmtnum" + BlogComments[i]);
+						}catch(e){
+							console.log("BlogComments[" + i + "] (" + BlogComments[i] + ") Err.");
+						}
+					}
+				}catch(e){
+					console.log("BlogComments Err.");
+				}
+				$(".posttime").each(function(){
+					persiannum(this);
+				});
+				var headerUrl = "stackofbooks";
+				if(window.location.pathname.indexOf("<-BlogArchiveLink->") > -1)
+					headerUrl = "archive";
+				else if(window.location.pathname.indexOf("page") > -1)
+					headerUrl = "stackofbooks";
+				else
+					headerUrl = "header" + Math.floor(Math.random() * headers);
+				$("#top").css("background-image", "url(http://hadisafari76.persiangig.com/other/KSCSO/blogfa_adabi/img/" + headerUrl + ".jpg)");
+				function persiannum (s){
+					var text = $(s).html();
+					text = text.replace(/0/g, "۰");
+					text = text.replace(/1/g, "۱");
+					text = text.replace(/2/g, "۲");
+					text = text.replace(/3/g, "۳");
+					text = text.replace(/4/g, "۴");
+					text = text.replace(/5/g, "۵");
+					text = text.replace(/6/g, "۶");
+					text = text.replace(/7/g, "۷");
+					text = text.replace(/8/g, "۸");
+					text = text.replace(/9/g, "۹");
+					$(s).html(text);
+				}
+			});
+		</script>
+	</body>
+</html>
